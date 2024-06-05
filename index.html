@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+        }
+        .header a {
+            margin-left: 20px;
+            color: #1a73e8;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .google-logo {
+            margin-top: 100px;
+        }
+        .search-bar-container {
+            margin-top: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        .search-bar {
+            width: 500px;
+            padding: 10px 50px;
+            font-size: 18px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            box-shadow: none;
+            transition: box-shadow 0.3s;
+        }
+        .search-bar:focus {
+            box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+            outline: none;
+        }
+        .search-icon, .mic-icon, .camera-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .search-icon {
+            left: 20px;
+        }
+        .mic-icon {
+            right: 60px;
+            width: 24px; /* Ajusta el tamaño del icono del micrófono */
+            height: auto;
+        }
+        .camera-icon {
+            right: 20px;
+            width: 24px; /* Ajusta el tamaño del icono de la cámara */
+            height: auto;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            color: #5f6368;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .button:hover {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            background-color: #f8f9fa;
+            border: 1px solid #c6c6c6;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+            color: #666;
+            font-size: 14px;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-left {
+            margin-left: 20px;
+        }
+        .footer-right {
+            margin-right: 20px;
+        }
+        .footer a {
+            color: #1a0dab;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .apps-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 0; /* Cambia la imagen de circular a cuadrada */
+        }
+        .user-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#">Gmail</a>
+        <a href="#">Imágenes</a>
+        <!-- Aquí puedes cambiar la imagen del cuadro con círculos -->
+        <img src="menugoogle.jpeg" alt="Apps" class="apps-icon">
+        <!-- Aquí puedes cambiar la imagen del usuario -->
+        <img src="estrella.jpg" alt="User" class="user-icon">
+    </div>
+    <div class="google-logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+    </div>
+    <div class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Buscar en Google">
+        <img src="https://www.google.com/images/icons/material/system/1x/search_gm_blue_24dp.png" alt="Search" class="search-icon" width="24">
+        
+        <!-- Aquí puedes cambiar la imagen del micrófono -->
+        <img src="microfono.png" alt="Mic" class="mic-icon">
+        
+        <!-- Aquí puedes cambiar la imagen de la cámara -->
+        <img src="cam.jpg" alt="Camera" class="camera-icon">
+    </div>
+    <div class="buttons">
+        <button class="button">Buscar con Google</button>
+        <button class="button">Voy a tener suerte</button>
+    </div>
+    <div class="footer">
+        <div class="footer-left">México</div>
+        <div class="footer-right">
+            <a href="#">Sobre Google</a>
+            <a href="#">Publicidad</a>
+            <a href="#">Negocios</a>
+            <a href="#">Cómo funciona la búsqueda</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Condiciones</a>
+            <a href="#">Preferencias</a>
+        </div>
+    </div>
+</body>
+</html>
